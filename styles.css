@@ -1,0 +1,97 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(90deg, 
+        rgba(255, 0, 0, 0.5), 
+        rgba(255, 165, 0, 0.5), 
+        rgba(255, 255, 0, 0.5), 
+        rgba(0, 128, 0, 0.5), 
+        rgba(0, 0, 255, 0.5), 
+        rgba(75, 0, 130, 0.5));
+    background-size: 400% 400%;
+    animation: rainbow 10s ease infinite;
+  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    text-align: center;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    border: 2px solid black;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+form label, form input, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #333; /* Add border */
+    padding: 15px; /* Increase padding to make the button larger */
+    cursor: pointer;
+    align-items: center;
+    font-size: 18px; /* Increase font size */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+form button:hover {
+    background-color: #45a049;
+}
